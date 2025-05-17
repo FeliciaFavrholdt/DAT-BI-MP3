@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent  # from /app/pages → /app
 MODELS_DIR = BASE_DIR / "models"
 
 st.set_page_config(page_title="Employee Behavior Prediction", layout="centered")
-st.title("🔮 Predict Employee Behavior")
+st.title("Predict Your Employees Behavior")
 
 # Sidebar: Choose model
 model_type = st.selectbox("Select Model Type", [
@@ -52,7 +52,7 @@ if st.button("Run Prediction"):
             prediction = model.predict(clf_input)[0]
             probability = model.predict_proba(clf_input)[0][1]
             label = "Yes" if prediction == 1 else "No"
-            st.success(f"⚠️ Attrition Prediction: {label} ({probability:.1%} probability)")
+            st.success(f"Attrition Prediction: {label} ({probability:.1%} probability)")
 
         elif "Clustering" in model_type:
             model = joblib.load(MODELS_DIR / "cluster_pipeline.pkl")
@@ -66,7 +66,7 @@ if st.button("Run Prediction"):
                 2: "At-risk group: long commute, low satisfaction"
             }
             description = cluster_labels.get(cluster, "Unknown segment")
-            st.info(f"🧠 Cluster Insight: {description}")
+            st.info(f"Cluster Insight: {description}")
 
         else:
             st.error("Unknown model type selected.")
@@ -74,4 +74,4 @@ if st.button("Run Prediction"):
     except FileNotFoundError:
         st.error("🔍 Model file not found. Please ensure it is saved in `app/models/`.")
     except Exception as e:
-        st.error(f"❌ Something went wrong: {e}")
+        st.error(f"Something went wrong: {e}")

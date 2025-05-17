@@ -28,4 +28,4 @@ _This is part of Mini Project 3: Machine Learning for Analysis & Prediction_
 """)
 
 st.markdown("---")
-st.caption("Built with ❤️ for Mini Project 3 | CPHBusiness")
+st.caption("Built for Mini Project 3 | CPHBusiness")
