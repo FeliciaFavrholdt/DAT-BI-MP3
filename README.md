@@ -1,5 +1,9 @@
 # IBM HR Attrition Prediction Project
 
+### Created by Group 4 – Alberte & Felicia
+
+#### We used pair programming to create this project. Felicia wrote the code while Alberte contributed through discussion and review.
+
 ### Github Link: https://github.com/FeliciaFavrholdt/DAT-BI-MP3/tree/main 
 
 ![alt text](<Screenshot 2025-05-17 at 23.04.05.png>)
@@ -13,10 +17,6 @@
    Navigate to the project directory in your terminal and run:
    ```bash
    pip install -r requirements.txt
-
-### Created by Group 4 – Alberte & Felicia
-
-#### We used pair programming to create this project. Felicia wrote the code while Alberte contributed through discussion and review.
 
 ## Objective
 
