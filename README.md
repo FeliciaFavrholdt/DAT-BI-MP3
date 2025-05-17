@@ -2,6 +2,18 @@
 
 ### Github Link: https://github.com/FeliciaFavrholdt/DAT-BI-MP3/tree/main 
 
+![alt text](<Screenshot 2025-05-17 at 23.04.05.png>)
+
+### Streamlit App - Run Locally
+
+1. **Install Python**  
+   Download and install Python from [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+2. **Install Dependencies**  
+   Navigate to the project directory in your terminal and run:
+   ```bash
+   pip install -r requirements.txt
+
 ### Created by Group 4 – Alberte & Felicia
 
 #### We used pair programming to create this project. Felicia wrote the code while Alberte contributed through discussion and review.
