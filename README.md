@@ -6,7 +6,7 @@
 
 ### Github Link: https://github.com/FeliciaFavrholdt/DAT-BI-MP3/tree/main 
 
-![alt text](<Screenshot 2025-05-17 at 23.04.05.png>)
+![alt text](<Screenshot 2025-05-17 at 23.15.54.png>)
 
 ### Streamlit App - Run Locally
 
