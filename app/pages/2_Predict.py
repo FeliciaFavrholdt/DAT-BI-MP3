@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+st.set_page_config(page_title="Employee Behavior Prediction", layout="centered")
 st.title("🔮 Predict Employee Behavior")
 
 # Sidebar: Choose model
@@ -14,7 +15,7 @@ model_type = st.selectbox("Select Model Type", [
 # Input form
 st.subheader("Enter Employee Information")
 age = st.slider("Age", 18, 60, 30)
-distance = st.slider("Distance from Home", 1, 30, 5)
+distance = st.slider("Distance from Home (km)", 1, 30, 5)
 satisfaction = st.slider("Job Satisfaction", 1, 4, 3)
 performance = st.slider("Performance Rating", 1, 4, 3)
 years_at_company = st.slider("Years at Company", 0, 40, 5)
@@ -35,13 +36,13 @@ input_df = pd.DataFrame([input_data])
 if st.button("Run Prediction"):
     try:
         if "Regression" in model_type:
-            model = joblib.load("app/models/regression_pipeline.pkl")
-            reg_input = input_df.drop(columns=["MonthlyIncome"])  # Income is target, not input
+            model = joblib.load("models/regression_pipeline.pkl")
+            reg_input = input_df.drop(columns=["MonthlyIncome"])
             prediction = model.predict(reg_input)[0]
             st.success(f"💰 Predicted Monthly Income: ${prediction:,.2f}")
 
         elif "Classification" in model_type:
-            model = joblib.load("app/models/classifier_pipeline.pkl")
+            model = joblib.load("models/classifier_pipeline.pkl")
             clf_input = input_df.drop(columns=["MonthlyIncome"])
             prediction = model.predict(clf_input)[0]
             probability = model.predict_proba(clf_input)[0][1]
@@ -49,7 +50,7 @@ if st.button("Run Prediction"):
             st.success(f"⚠️ Attrition Prediction: {label} ({probability:.1%} probability)")
 
         elif "Clustering" in model_type:
-            model = joblib.load("app/models/cluster_pipeline.pkl")
+            model = joblib.load("models/cluster_pipeline.pkl")
             cluster = model.predict(input_df)[0]
             st.success(f"👥 Employee belongs to Cluster: {cluster}")
 
