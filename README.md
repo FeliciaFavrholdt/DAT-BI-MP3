@@ -13,10 +13,23 @@
 1. **Install Python**  
    Download and install Python from [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-2. **Install Dependencies**  
-   Navigate to the project directory in your terminal and run:
+2. **Clone the Repository**
+   ```bash
+   git clone https://github.com/FeliciaFavrholdt/DAT-BI-MP3.git
+   cd DAT-BI-MP3
+   ```
+
+3. **Install Dependencies**  
+   Make sure you're in the project folder, then run:
    ```bash
    pip install -r requirements.txt
+   ```
+
+4. **Start the App**  
+   Run the Streamlit app using:
+   ```bash
+   streamlit run Home.py
+   ```
 
 ## Objective
 
