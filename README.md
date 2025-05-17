@@ -28,7 +28,7 @@
 4. **Start the App**  
    Run the Streamlit app using:
    ```bash
-   streamlit run Home.py
+   streamlit run app/streamlit_app.py                     
    ```
 
 ## Objective
