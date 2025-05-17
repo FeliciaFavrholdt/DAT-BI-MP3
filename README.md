@@ -1,5 +1,7 @@
 # IBM HR Attrition Prediction Project
 
+### Github Link: https://github.com/FeliciaFavrholdt/DAT-BI-MP3/tree/main 
+
 ### Created by Group 4 – Alberte & Felicia
 
 #### We used pair programming to create this project. Felicia wrote the code while Alberte contributed through discussion and review.

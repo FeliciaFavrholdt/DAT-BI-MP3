@@ -20,7 +20,7 @@ scaler = joblib.load(os.path.join(MODEL_DIR, "scaler.joblib"))
 
 
 # App title
-st.title("💼 Employee Attrition & Behavior Prediction App")
+st.title("Employee Attrition & Behavior Prediction App")
 st.markdown("Use this app to predict **Monthly Income**, **Attrition**, and **Employee Clusters** using machine learning models.")
 
 # Sidebar menu
