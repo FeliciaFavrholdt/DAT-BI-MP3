@@ -2,7 +2,7 @@
 
 ### Created by Group 4 - Alberte & Felicia
 
-#### We have used pair programming to create this project so Felicia has been the one coding and writing as we needed more exercise in this.
+#### We have used pair programming to create this project so Felicia has been the one coding and writing. 
 
 ## Objective 
 The objective of this mini project is to provide practice in data analysis and prediction by regression,
